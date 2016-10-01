@@ -5,6 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
  * @package hamilton
+ * @version 1.0
  */
 
 get_header(); ?>

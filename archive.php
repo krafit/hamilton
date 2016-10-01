@@ -5,6 +5,7 @@
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package hamilton
+ * @version 1.0
  */
 
 get_header(); ?>

@@ -5,6 +5,7 @@
  * Eventually, some of the functionality here could be replaced by core features.
  *
  * @package hamilton
+ * @version 1.0
  */
 
 /**

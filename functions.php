@@ -5,6 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package hamilton
+ * @version 1.0
  */
 
 if ( ! function_exists( 'hamilton_setup' ) ) :

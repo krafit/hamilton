@@ -3,6 +3,7 @@
  * hamilton Theme Customizer.
  *
  * @package hamilton
+ * @version 1.0
  */
 
 /**

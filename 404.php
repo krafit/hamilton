@@ -5,6 +5,7 @@
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
  * @package hamilton
+ * @version 1.0
  */
 
 get_header(); ?>

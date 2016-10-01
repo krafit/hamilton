@@ -5,6 +5,7 @@
  * @link https://jetpack.com/
  *
  * @package hamilton
+ * @version 1.0
  */
 
 /**
