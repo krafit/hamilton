@@ -41,8 +41,9 @@ get_header(); ?>
 
 			endwhile;
 
-			the_posts_navigation();
-
+			echo '<div class="wrapper">';
+				the_posts_navigation();
+			echo '</div><!-- .wrapper -->';
 		else :
 
 			get_template_part( 'template-parts/content', 'none' );

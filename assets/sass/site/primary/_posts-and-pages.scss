@@ -4,6 +4,15 @@
 
 .hentry {
 	margin: 0 0 1.5em;
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	line-height: 1.4;
+	font-weight: 500;
+	max-width: 40rem;
+	margin: 0 auto;
+}
 }
 
 .byline,
