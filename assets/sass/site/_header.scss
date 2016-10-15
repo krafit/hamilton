@@ -16,7 +16,7 @@ p.site-title {
 .site-description {
 	text-align: center;
 	@include font-size(1.5);
-	margin-top: 0.5em;
+	margin: 0.2em 0 2em;
 	color: $color__primary;
 	font-weight: 600;
 }

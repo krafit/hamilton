@@ -107,6 +107,8 @@ function hamilton_scripts() {
 	// Check for SCRIPT_DEBUG
 	$suffix = defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ? '' : '.min';
 
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Permanent+Marker' );
+
 	wp_enqueue_style( 'hamilton-style', get_template_directory_uri() . '/style' . $suffix . '.css' );
 
 	wp_enqueue_script( 'hamilton-navigation', get_template_directory_uri() . '/assets/js/navigation' . $suffix . '.js', array(), '20161001', true );
