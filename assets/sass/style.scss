@@ -8,7 +8,7 @@ Version: pre 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: hamilton
-Tags:
+Tags: one-column, accessibility-ready, custom-menu, custom-logo, theme-options, threaded-comments
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -44,6 +44,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
+@import "mixins/mixins-responsive";
 
 /*--------------------------------------------------------------
 # Normalize
