@@ -1,8 +1,8 @@
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
 	width: 100%;
+	text-align: center;
 
 	ul {
 		display: none;
@@ -50,9 +50,7 @@
 	}
 
 	li {
-		float: left;
 		position: relative;
-
 		&:hover > a,
 		&.focus > a {
 		}
@@ -61,6 +59,7 @@
 	a {
 		display: block;
 		text-decoration: none;
+		font-weight: 600;
 	}
 
 	.current_page_item > a,
@@ -74,6 +73,7 @@
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+	width: 100%;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -82,13 +82,20 @@
 	}
 	.main-navigation ul {
 		display: block;
+		li {
+			display: inline-block;
+			margin: 0 10px;
+		}
+		a {
+			display: inline-block;
+		}
 	}
 }
 
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
-
+	width: 100%;
 	.site-main & {
 		margin: 0 0 1.5em;
 		overflow: hidden;
