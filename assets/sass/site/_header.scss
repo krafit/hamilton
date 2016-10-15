@@ -1,0 +1,28 @@
+p.site-title {
+	@include font-size(2.5); // fixes quirky behaviour if page ≠ front page
+}
+
+.site-title {
+	font-family: $font__highlight;
+	@include font-size(2.8);
+	line-height: 1;
+	text-align: center;
+	margin: 0.67em 0 0;
+	& a, & a:visited {
+		color: $color__primary !important;
+	}
+}
+
+.site-description {
+	text-align: center;
+	@include font-size(1.5);
+	margin-top: 0.5em;
+	color: $color__primary;
+	font-weight: 600;
+}
+
+@include responsive(small-screens) {
+	.site-title {
+		@include font-size(4.5);
+	}
+}
