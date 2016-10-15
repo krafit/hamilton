@@ -10,7 +10,7 @@
 
 if ( ! function_exists( 'hamilton_posted_on' ) ) :
 /**
- * Prints HTML with meta information for the current post-date/time and author.
+ * Prints HTML with meta information for the current post-date/time.
  */
 function hamilton_posted_on() {
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
@@ -26,19 +26,31 @@ function hamilton_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		esc_html_x( 'Posted on %s', 'post date', 'hamilton' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
+
+	echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
+
+}
+endif;
+
+if ( ! function_exists( 'hamilton_post_author' ) ) :
+/**
+ * Prints HTML with meta information for the current author.
+ */
+function hamilton_post_author() {
 
 	$byline = sprintf(
 		esc_html_x( 'by %s', 'post author', 'hamilton' ),
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
-	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
+	echo '<span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
 
 }
 endif;
+
+
 
 if ( ! function_exists( 'hamilton_entry_footer' ) ) :
 /**

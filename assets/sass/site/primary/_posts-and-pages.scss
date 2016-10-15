@@ -3,7 +3,18 @@
 }
 
 .hentry {
-	margin: 0 0 1.5em;
+	margin-top: 1rem;
+	padding: 1rem;
+	&:first-child {
+		margin-top: 4rem;
+	}
+	&:not(:last-child) {
+		margin-bottom: 6rem;
+	& .page {
+		margin-top: 0;
+	}
+	}
+}
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -13,6 +24,23 @@
 	max-width: 40rem;
 	margin: 0 auto;
 }
+
+header.entry-header {
+	width: 100%;
+	text-align: center;
+	@include font-size(1.1);
+}
+
+.entry-meta {
+	opacity: 0.5;
+}
+
+.entry-meta+.entry-title {
+	margin-top: 0;
+}
+
+.entry-title {
+	margin-bottom: .9rem;
 }
 
 .byline,
@@ -23,12 +51,6 @@
 .single .byline,
 .group-blog .byline {
 	display: inline;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
 }
 
 .page-links {
