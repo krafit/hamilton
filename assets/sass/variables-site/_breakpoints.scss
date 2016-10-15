@@ -1,0 +1,20 @@
+// ------------
+// Variables Breakporints
+// @since Sequana 0.1
+//
+// @author krafit
+// @lastupdate 1411301628
+// ------------
+
+
+// Our theme has a mobile first approach. So if no breakpoint is set we have a
+// viewport < $width-small.
+
+// Tablet in portrait 
+$width-small:  768px;
+
+// Tablet in landscape and normal screens
+$width-medium: 1024px;
+
+// Fatass screens
+$width-large:  1824px;

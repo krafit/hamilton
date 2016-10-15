@@ -1,7 +1,38 @@
+// ------------
+// Mixin Master
+// @since Sequana 0.2
+//
+// @author krafit
+// @lastupdate 1610021519
+// ------------
+
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
 	font-size: ($sizeValue * 16) * 1px;
 	font-size: $sizeValue * 1rem;
+}
+
+// Box model
+@mixin box-sizing($box-model) {
+	-webkit-box-sizing: $box-model; // Safari <= 7
+	-moz-box-sizing: $box-model; // Firefox <= 19
+	box-sizing: $box-model;
+}
+
+// Border radius
+@mixin border-radius($radius) {
+	background-clip: padding-box; /* stops bg color from leaking outside the border: */
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+}
+
+// Transitions
+@mixin transition($property: all, $speed: .5s, $effect: ease-in-out) {
+	-webkit-transition: $property $speed $effect;
+	-moz-transition: $property $speed $effect;
+	-ms-transition: $property $speed $effect;
+	-o-transition: $property $speed $effect;
+	transition: $property $speed $effect;
 }
 
 // Center block
@@ -22,3 +53,13 @@
 @mixin clearfix-after() {
 	clear: both;
 }
+
+// Background Color with opacity 
+@mixin transparent($color, $alpha: .8) {
+  $rgba: rgba($color, $alpha);
+  background-color: $color;
+  $ie-hex-str: ie-hex-str($rgba);
+  background-color: $rgba;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+ }
+
