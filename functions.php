@@ -111,8 +111,6 @@ function hamilton_scripts() {
 
 	wp_enqueue_style( 'hamilton-style', get_template_directory_uri() . '/style' . $suffix . '.css' );
 
-	wp_enqueue_script( 'hamilton-navigation', get_template_directory_uri() . '/assets/js/navigation' . $suffix . '.js', array(), '20161001', true );
-
 	wp_enqueue_script( 'hamilton-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix' . $suffix . '.js', array(), '20161001', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

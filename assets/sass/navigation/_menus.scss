@@ -2,10 +2,15 @@
 	clear: both;
 	display: block;
 	width: 100%;
-	text-align: center;
+	// background-color: red; // @todo: remove
+	text-align: right;
+	position: fixed;
+	padding: 1em;
+	bottom: 0;
+	background-color: $color__primary;
 
 	ul {
-		display: none;
+		// display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
@@ -50,9 +55,13 @@
 	}
 
 	li {
+		display: inline-block;
 		position: relative;
 		&:hover > a,
 		&.focus > a {
+		}
+		&:not(:last-of-type) {
+			margin-right: 10px;
 		}
 	}
 
@@ -60,12 +69,14 @@
 		display: block;
 		text-decoration: none;
 		font-weight: 600;
+		color: white;
 	}
 
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a,
-	.current-menu-ancestor > a {
+	.current_page_item,
+	.current-menu-item,
+	.current_page_ancestor,
+	.current-menu-ancestor {
+		border-bottom: 3px white solid;
 	}
 }
 
@@ -77,17 +88,29 @@
 }
 
 @media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
+	.main-navigation {
+		position: initial;
+		text-align: center;
+		padding: 0;
+		background-color: transparent;
+		
+		.current_page_item,
+		.current-menu-item,
+		.current_page_ancestor,
+		.current-menu-ancestor {
+			border-color: $color__secondary;
+		}
 	}
 	.main-navigation ul {
 		display: block;
+
 		li {
 			display: inline-block;
 			margin: 0 10px;
 		}
 		a {
 			display: inline-block;
+			color: $color__secondary;
 		}
 	}
 }
@@ -96,6 +119,7 @@
 .posts-navigation,
 .post-navigation {
 	width: 100%;
+	padding: 16px;
 	.site-main & {
 		margin: 0 0 1.5em;
 		overflow: hidden;
