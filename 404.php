@@ -20,13 +20,7 @@ get_header(); ?>
 					</header><!-- .page-header -->
 
 					<div class="page-content">
-						<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'hamilton' ); ?></p>
-
-						<?php
-							get_search_form();
-
-							the_widget( 'WP_Widget_Recent_Posts' );
-						?>
+						<p><?php esc_html_e( 'It looks like nothing was found at this location.', 'hamilton' ); ?></p>
 
 
 					</div><!-- .page-content -->
