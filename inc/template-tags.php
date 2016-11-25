@@ -10,7 +10,7 @@
 
 if ( ! function_exists( 'hamilton_posted_on' ) ) :
 /**
- * Prints HTML with meta information for the current post-date/time.
+ * Prints HTML with meta information for the current post-date/time and author.
  */
 function hamilton_posted_on() {
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
@@ -36,7 +36,7 @@ endif;
 
 if ( ! function_exists( 'hamilton_post_author' ) ) :
 /**
- * Prints HTML with meta information for the current author.
+ * Prints HTML with meta information for the current post-date/time and author.
  */
 function hamilton_post_author() {
 
