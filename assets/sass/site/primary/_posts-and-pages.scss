@@ -1,3 +1,11 @@
+.site-content {
+	overflow-x: hidden;
+}
+
+article {
+	max-width: 100%;
+}
+
 .sticky {
 	display: block;
 }
@@ -10,9 +18,9 @@
 	}
 	&:not(:last-child) {
 		margin-bottom: 6rem;
-	& .page {
-		margin-top: 0;
 	}
+	&.page {
+		margin-top: 0;
 	}
 }
 .wrapper {
