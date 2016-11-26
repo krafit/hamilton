@@ -38,3 +38,30 @@ function hamilton_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'hamilton_pingback_header' );
+
+
+/**
+ * Add a caption to post thumbnails.
+ * 
+ * @link http://wordpress.stackexchange.com/questions/138126/how-to-get-the-post-thumbnail-caption
+ */
+function hamilton_thumbnail_caption( $html, $post_id, $post_thumbnail_id, $size, $attr ) {
+    if ( $post = get_post( $post_thumbnail_id ) ) {
+        if ( $size = wp_get_attachment_image_src( $post->ID, $size ) )
+            $width = $size[1];
+        else
+            $width = 0;
+
+        $html = img_caption_shortcode(
+            array(
+                'caption' => trim( "$post->post_excerpt $post->post_content" ),
+                'width'   => $width,
+            ),
+            $html       
+        );
+    }
+
+    return $html;
+}
+
+add_filter( 'post_thumbnail_html', 'hamilton_thumbnail_caption', 10, 5 );
