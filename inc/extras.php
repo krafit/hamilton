@@ -65,14 +65,3 @@ function hamilton_thumbnail_caption( $html, $post_id, $post_thumbnail_id, $size,
 }
 
 add_filter( 'post_thumbnail_html', 'hamilton_thumbnail_caption', 10, 5 );
-
-
-/**
- * Allow &shy; in post titles.
- * 
- * @link http://stackoverflow.com/questions/29253944/wordpress-shy
- */
-function hamilton_shy_options($initArray) {
-    $initArray['entities'] = 'shy'; 
-}
-add_filter('tiny_mce_before_init', 'hamilton_shy_options');
