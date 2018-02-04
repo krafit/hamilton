@@ -1,5 +1,5 @@
 html {
-	font-family: sans-serif;
+	font-family: $font__main;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
@@ -118,7 +118,7 @@ code,
 kbd,
 pre,
 samp {
-	font-family: monospace, monospace;
+	font-family: $font__code;
 	font-size: 1em;
 }
 
