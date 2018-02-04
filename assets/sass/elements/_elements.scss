@@ -39,4 +39,14 @@ figure {
 	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
 }
 
+dt {
+	color: $color__primary;
+	font-size: 1.5rem;
+	margin-top: 30px;
+}
+
+dd {
+	margin: 0;
+}
+
 @import "tables";
