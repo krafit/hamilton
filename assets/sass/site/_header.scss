@@ -1,5 +1,17 @@
-p.site-title {
-	@include font-size(2.5); // fixes quirky behaviour if page ≠ front page
+.site-branding {
+	margin-bottom: 2em;
+	svg {
+		width: 78%;
+		max-width: 475px;
+		fill: $color__primary;
+	}
+	&:hover svg {
+		fill: $color__primary;
+	}
+}
+
+p.site-title, h1.site-title {
+	@include font-size(2.8); // fixes quirky behaviour if page ≠ front page
 }
 
 .site-title {
@@ -16,13 +28,14 @@ p.site-title {
 .site-description {
 	text-align: center;
 	@include font-size(1.5);
-	margin: 0.2em 0 2em;
+	margin: 0.2em 0 0;
 	color: $color__primary;
 	font-weight: 600;
 }
 
 @include responsive(small-screens) {
-	.site-title {
+
+	h1.site-title, p.site-title {
 		@include font-size(4.5);
 	}
 }
