@@ -1,5 +1,6 @@
-#comments {
+.comments-area {
 	width: 100%;
+	padding: 1rem;
 }
 
 .comment-content a {
@@ -7,4 +8,40 @@
 }
 .bypostauthor {
 	display: block;
+}
+
+.comment-list {
+	list-style: none;
+	padding: 0;
+}
+
+.comment-meta,
+.comment-author {
+	display: flex;
+	align-items: center;
+}
+
+.comment-meta {
+	a,
+	.fn {
+		color: $color__secondary__light;
+	}
+	.avatar {
+		border-radius: 20px;
+		margin-right: 5px;
+	}
+}
+
+.comment-author {
+	margin-right: 5px;
+}
+.says,
+.edit-link {
+	display: none;
+}
+
+ol.children {
+	border-left: $color__secondary__light solid 4px;
+	margin: 2em 0 0;
+	padding-left: 1.5em;
 }
