@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package hamilton
+ * @package herschel
  * @version 1.0
  */
 
@@ -16,7 +16,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info wrapper">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'hamilton' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'hamilton' ), 'WordPress' ); ?></a>
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'herschel' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'herschel' ), 'WordPress' ); ?></a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

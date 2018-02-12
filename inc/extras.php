@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package hamilton
+ * @package herschel
  * @version 1.0
  */
 
@@ -14,7 +14,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function hamilton_body_classes( $classes ) {
+function herschel_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -27,14 +27,14 @@ function hamilton_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'hamilton_body_classes' );
+add_filter( 'body_class', 'herschel_body_classes' );
 
 /**
  * Add a pingback url auto-discovery header for singularly identifiable articles.
  */
-function hamilton_pingback_header() {
+function herschel_pingback_header() {
 	if ( is_singular() && pings_open() ) {
 		echo '<link rel="pingback" href="', bloginfo( 'pingback_url' ), '">';
 	}
 }
-add_action( 'wp_head', 'hamilton_pingback_header' );
+add_action( 'wp_head', 'herschel_pingback_header' );

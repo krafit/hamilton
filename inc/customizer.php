@@ -1,8 +1,8 @@
 <?php
 /**
- * hamilton Theme Customizer.
+ * herschel Theme Customizer.
  *
- * @package hamilton
+ * @package herschel
  * @version 1.0
  */
 

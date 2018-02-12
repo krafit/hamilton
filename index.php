@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package hamilton
+ * @package herschel
  * @version 1.0
  */
 

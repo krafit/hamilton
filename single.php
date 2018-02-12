@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package hamilton
+ * @package herschel
  * @version 1.0
  */
 

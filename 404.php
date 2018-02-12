@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package hamilton
+ * @package herschel
  * @version 1.0
  */
 
@@ -16,11 +16,11 @@ get_header(); ?>
 			<section class="error-404 not-found">
 				<div class="wrapper">
 					<header class="page-header">
-						<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'hamilton' ); ?></h1>
+						<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'herschel' ); ?></h1>
 					</header><!-- .page-header -->
 
 					<div class="page-content">
-						<p><?php esc_html_e( 'It looks like nothing was found at this location.', 'hamilton' ); ?></p>
+						<p><?php esc_html_e( 'It looks like nothing was found at this location.', 'herschel' ); ?></p>
 
 
 					</div><!-- .page-content -->
