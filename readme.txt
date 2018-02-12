@@ -1,11 +1,11 @@
 === Herschel ===
 
-Contributors: automattic
+Contributors: krafit
 Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
 
-Requires at least: 4.0
-Tested up to: 4.5.3
-Stable tag: 1.0.0
+Requires at least: 4.9
+Tested up to: 5.0
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,7 +29,14 @@ herschel includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
-= 1.0 - May 12 2015 =
+= 1.2 - XX =
+* "Hamilton" is now "Herschel"
+
+= 1.1 - February 04 2018 =
+* overhauled blog design
+* multible bug fixes
+
+= 1.0 - October 01 2016 =
 * Initial release
 
 == Credits ==
