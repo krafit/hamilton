@@ -65,6 +65,14 @@ function herschel_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+	
+	 // Add support for wide images
+	add_theme_support( 'align-wide' );
+ 	
+	add_theme_support( 'editor-color-palette',
+		'#ff006e',
+		'#277afa'
+	);
 }
 endif;
 add_action( 'after_setup_theme', 'herschel_setup' );

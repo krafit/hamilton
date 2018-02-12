@@ -14,3 +14,29 @@
 	clear: both;
 	@include center-block;
 }
+
+.alignfull {
+	left: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	position: relative;
+	right: 50%;
+	text-align: center;
+	width: 100vw;
+	img {
+		width: 100%;
+	}
+}
+
+.alignwide {
+	left: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	position: relative;
+	right: 50%;
+	text-align: center;
+	width: 100vw;
+	img {
+		max-width: 870px;
+	}
+}
