@@ -66,13 +66,27 @@ function herschel_setup() {
 		'default-image' => '',
 	) ) );
 	
-	 // Add support for wide images
-	add_theme_support( 'align-wide' );
- 	
-	add_theme_support( 'editor-color-palette',
-		'#ff006e',
-		'#277afa'
-	);
+	/**
+	* Add support for Gutenberg.
+	*
+	* @link https://wordpress.org/gutenberg/handbook/reference/theme-support/
+	*/
+	add_theme_support( 'gutenberg', [
+
+		// Theme supports wide images, galleries and videos.
+		'wide-images' => true,
+
+		// Make specific theme colors available in the editor.
+		'colors' => array(
+			'#ff338b', // primary_light
+			'#ff006e', // primary
+			'#cc0058', // primary_dark
+			'#5999fb', // secondary_light
+			'#277afa', // secondary
+			'#055fe9', // secondary_dark
+		),
+
+	] );
 	
 	/**
 	* Enqueue editor styles for Gutenberg
