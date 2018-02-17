@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package herschel
+ * @package meitner
  */
 
 ?>
@@ -23,7 +23,7 @@
 			the_content();
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'herschel' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'meitner' ),
 				'after'  => '</div>',
 			) );
 		?>

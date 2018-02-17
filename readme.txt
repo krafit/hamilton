@@ -1,4 +1,4 @@
-=== Herschel ===
+=== Meitner ===
 
 Contributors: krafit
 Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
@@ -9,11 +9,11 @@ Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A starter theme called herschel, or underscores.
+A starter theme called meitner, or underscores.
 
 == Description ==
 
-Hi. I'm a starter theme called Herschel, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Hi. I'm a starter theme called meitner, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 
 == Installation ==
 
@@ -25,12 +25,12 @@ Hi. I'm a starter theme called Herschel, or underscores, if you like. I'm a them
 
 = Does this theme support any plugins? =
 
-herschel includes support for Infinite Scroll in Jetpack.
+meitner includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
 = 1.2 - XX =
-* "Hamilton" is now "Herschel"
+* "Hamilton" is now "Meitner"
 
 = 1.1 - February 04 2018 =
 * overhauled blog design

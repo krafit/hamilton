@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package herschel
+ * @package meitner
  * @version 1.0
  */
 

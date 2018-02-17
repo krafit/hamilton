@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package herschel
+ * @package meitner
  * @version 1.0
  */
 
@@ -21,8 +21,8 @@ get_header(); ?>
 			echo '<div class="wrapper">';
 
 				the_post_navigation( [
-					'prev_text' => '<span class="navigation-title">' . __( 'Previous post', 'herschel' ) . '</span> %title',
-					'next_text' => '<span class="navigation-title">' . __( 'Next post', 'herschel' ) . '</span> %title',
+					'prev_text' => '<span class="navigation-title">' . __( 'Previous post', 'meitner' ) . '</span> %title',
+					'next_text' => '<span class="navigation-title">' . __( 'Next post', 'meitner' ) . '</span> %title',
 				] );
 
 				// If comments are open or we have at least one comment, load up the comment template.

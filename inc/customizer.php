@@ -1,8 +1,8 @@
 <?php
 /**
- * herschel Theme Customizer.
+ * meitner Theme Customizer.
  *
- * @package herschel
+ * @package meitner
  * @version 1.0
  */
 
