@@ -65,6 +65,22 @@ header.entry-header {
 	max-width: 100%;
 }
 
+.entry-footer {
+	width: 100%;
+	.single-post &::before {
+		content: "";
+		width: 100px;
+		border-bottom: 2px solid #000;
+		display: block;
+		margin: 50px 0 30px;
+	}
+}
+
+.cat-links,
+.tags-links {
+	display: block;
+}
+
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;

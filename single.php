@@ -20,7 +20,10 @@ get_header(); ?>
 
 			echo '<div class="wrapper">';
 
-				the_post_navigation();
+				the_post_navigation( [
+					'prev_text' => '<span class="navigation-title">' . __( 'Previous post', 'herschel' ) . '</span> %title',
+					'next_text' => '<span class="navigation-title">' . __( 'Next post', 'herschel' ) . '</span> %title',
+				] );
 
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :

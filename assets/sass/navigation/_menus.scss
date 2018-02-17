@@ -121,20 +121,26 @@
 .posts-navigation,
 .post-navigation {
 	width: 100%;
-	padding: 16px;
+	.navigation-title {
+		display: block;
+		color: $color__text-main;
+	}
 	.site-main & {
 		margin: 0 0 1.5em;
 		overflow: hidden;
 	}
+}
 
+.nav-links {
+	display: grid;
+	grid-template-columns: 30fr 40fr 30fr;
+	grid-gap: 10px;
 	.nav-previous {
-		float: left;
-		width: 50%;
+		grid-column-start: 1;
+		grid-column-end: 2;
 	}
-
 	.nav-next {
-		float: right;
-		text-align: right;
-		width: 50%;
+		grid-column-start: 3;
+		grid-column-end: 4;
 	}
 }
