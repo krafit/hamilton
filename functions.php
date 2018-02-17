@@ -73,6 +73,16 @@ function herschel_setup() {
 		'#ff006e',
 		'#277afa'
 	);
+	
+	/**
+	* Enqueue editor styles for Gutenberg
+	*/
+
+	function theme_slug_editor_styles() {
+		wp_enqueue_style( 'theme-slug-editor-style', get_template_directory_uri() . '/assets/css/editor-style.css' );
+	}
+	add_action( 'enqueue_block_editor_assets', 'theme_slug_editor_styles' );
+	 
 }
 endif;
 add_action( 'after_setup_theme', 'herschel_setup' );

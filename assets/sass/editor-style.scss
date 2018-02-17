@@ -1,0 +1,57 @@
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+@import "mixins/mixins-responsive";
+
+.edit-post-visual-editor, .edit-post-visual-editor p, .edit-post-visual-editor .editor-post-title textarea.editor-post-title__input {
+	color: $color__text-main;
+	font-family: $font__main;
+	@include font-size(1);
+	line-height: $font__line-height-body;
+	font-weight: 500;
+}
+
+.edit-post-visual-editor .editor-post-title textarea.editor-post-title__input,
+.edit-post-visual-editor h2,
+.edit-post-visual-editor h3,
+.edit-post-visual-editor h4,
+.edit-post-visual-editor h5,
+.edit-post-visual-editor h6 {
+	clear: both;
+	line-height: 1.2;
+	font-weight: bold;
+}
+.edit-post-visual-editor .editor-post-title textarea.editor-post-title__input,
+.edit-post-visual-editor h2,
+.edit-post-visual-editor h3,
+.edit-post-visual-editor h4,
+.edit-post-visual-editor h5,
+.edit-post-visual-editor h6,
+.edit-post-visual-editor h1 a,
+.edit-post-visual-editor h2 a,
+.edit-post-visual-editor h3 a,
+.edit-post-visual-editor h4 a,
+.edit-post-visual-editor h5 a,
+.edit-post-visual-editor h6 a {
+	color: $color__primary !important;
+}
+
+.edit-post-visual-editor .editor-post-title textarea.editor-post-title__input {
+	@include font-size(2.4);
+	text-align: center;
+}
+.edit-post-visual-editor h2 {
+	@include font-size(2.2);
+}
+.edit-post-visual-editor h3 {
+	@include font-size(2);
+}
+.edit-post-visual-editor h4 {
+	@include font-size(1.8);
+}
+.edit-post-visual-editor h5 {
+	@include font-size(1.6);
+}
+.edit-post-visual-editor h6 {
+	@include font-size(1.6);
+	margin-top: 1.33em;
+}
