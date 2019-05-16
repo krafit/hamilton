@@ -37,10 +37,7 @@ production:
     
     only:
         - master
-    
-    except:
-        - master
-    
+
     variables:
         DEPLOY_PATH: $LIVE_THEMES
         DEPLOY_SERVER: vsa-kigoru.cyon.net
