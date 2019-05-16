@@ -36,7 +36,7 @@ production:
         - ./deploy.sh -u krafittl -d $DEPLOY_PATH -h $DEPLOY_SERVER --theme
     
     only:
-        - tags
+        - master
     
     except:
         - master
