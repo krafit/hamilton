@@ -1,7 +1,6 @@
 variables:
     GIT_SUBMODULE_STRATEGY: recursive
-    LIVE_PLUGINS: /home/krafittl/public_html/simonkraft/wp-content/plugins
-    LIVE_THEMES: /home/krafittl/public_html/simonkraft/wp-content/themes
+    LIVE_THEMES: /home/krafittl/public_html/simonkraft/wp-content/themes/meitner
 
 before_script:
     - git clone --branch=master --depth=1 --quiet git@git.simonkraft.com:meta/deploy-script.git
