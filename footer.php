@@ -16,7 +16,11 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info wrapper">
+			<?php if ( ! function_exists( 'meitner_site_info' ) ) : ?>
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'meitner' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'meitner' ), 'WordPress' ); ?></a>
+			<?php else:
+				meitner_site_info();
+			endif; ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
