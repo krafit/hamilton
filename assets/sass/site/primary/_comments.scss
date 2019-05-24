@@ -25,6 +25,9 @@
 	.avatar {
 		border-radius: 20px;
 		margin-right: 5px;
+		.bypostauthor & {
+			border: 2px solid $color__primary;
+		}
 	}
 }
 
