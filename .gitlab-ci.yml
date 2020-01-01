@@ -1,45 +1,27 @@
 variables:
     GIT_SUBMODULE_STRATEGY: recursive
-    LIVE_THEMES: /home/krafittl/public_html/simonkraft/wp-content/themes/meitner
+    LIVE_THEMES: /sites/login.simonkraft.de/files/wp-content/themes/meitner
 
 before_script:
     - git clone --branch=master --depth=1 --quiet git@git.simonkraft.com:meta/deploy-script.git
     - chmod +x deploy-script/*.sh
 
 stages:
-    - test
     - production
-
-# test:
-#     stage: test
-    
-#     script:
-#         - cd deploy-script
-#         - ./deploy.sh -u $SSH_USER_TEST -d $DEPLOY_PATH -h $DEPLOY_SERVER
-    
-#     only:
-#         - master
-    
-#     variables:
-#         DEPLOY_PATH: ${WD50_PATH_TEST_PLUGINS}/rh-dummy
-#         DEPLOY_SERVER: northstar.li
-        
-#         # GitLab group variables:
-#         # - SSH_USER_TEST
 
 production:
     stage: production
     
     script:
         - cd deploy-script
-        - ./deploy.sh -u krafittl -d $DEPLOY_PATH -h $DEPLOY_SERVER --theme
+        - ./deploy.sh -u simonkraft -d $DEPLOY_PATH -h $DEPLOY_SERVER --theme
     
     only:
         - master
 
     variables:
         DEPLOY_PATH: $LIVE_THEMES
-        DEPLOY_SERVER: vsa-kigoru.cyon.net
+        DEPLOY_SERVER: okeanos.simonkraft.com
         
         # GitLab group variables:
         # - 
