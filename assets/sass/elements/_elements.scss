@@ -10,6 +10,10 @@ html {
 
 body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	@include scheme(dark) {
+		background-color: #171717;
+		color: white;
+	}
 }
 
 blockquote, q {

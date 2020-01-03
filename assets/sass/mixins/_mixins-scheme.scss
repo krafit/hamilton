@@ -1,0 +1,16 @@
+// ------------
+// Mixin Responsive
+//
+// @author krafit
+// @lastupdate 2020/01/02
+// ------------
+
+
+@mixin color-scheme($scheme) {
+  @if $scheme == dark {
+    @media (prefers-color-scheme: dark) { @content; }
+  }
+  @else if $scheme == light {
+    @media (prefers-color-scheme: light) { @content; }
+  }
+}

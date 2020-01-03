@@ -73,6 +73,9 @@ header.entry-header {
 		border-bottom: 2px solid #000;
 		display: block;
 		margin: 50px 0 30px;
+		@include scheme(dark) {
+			border-color: white;
+		}
 	}
 }
 

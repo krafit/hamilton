@@ -128,6 +128,9 @@
 	.navigation-title {
 		display: block;
 		color: $color__text-main;
+		@include scheme(dark) {
+			color: white;
+		}
 	}
 	.site-main & {
 		margin: 0 0 1.5em;
