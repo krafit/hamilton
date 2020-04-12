@@ -25,6 +25,12 @@ blockquote, q {
 	}
 }
 
+.wp-block-quote {
+	border-left: #5999fb solid 4px;
+	margin: 2em 0 0;
+	padding-left: 1.5em;
+}
+
 hr {
 	background-color: $color__background-hr;
 	border: 0;

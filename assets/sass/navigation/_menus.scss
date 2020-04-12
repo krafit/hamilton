@@ -10,6 +10,10 @@
 	background-color: $color__primary;
 	z-index: 100;
 
+	& > * {
+ 		padding-bottom: env(safe-area-inset-bottom, 1em);
+	}
+	
 	.menu {
  		padding-bottom: env(safe-area-inset-bottom, 1em);
 	}
