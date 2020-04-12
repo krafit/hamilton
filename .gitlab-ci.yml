@@ -1,6 +1,5 @@
 variables:
     GIT_SUBMODULE_STRATEGY: recursive
-    LIVE_THEMES: /sites/login.simonkraft.de/files/wp-content/themes/meitner
 
 before_script:
     - git clone --branch=master --depth=1 --quiet git@git.simonkraft.com:meta/deploy-script.git
@@ -20,8 +19,5 @@ production:
         - master
 
     variables:
-        DEPLOY_PATH: $LIVE_THEMES
+        DEPLOY_PATH: /sites/login.simonkraft.de/files/wp-content/themes/meitner
         DEPLOY_SERVER: okeanos.simonkraft.com
-        
-        # GitLab group variables:
-        # - 
