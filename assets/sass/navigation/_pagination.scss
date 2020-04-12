@@ -1,0 +1,20 @@
+.pagination-wrapper {
+	width: 100%;
+	.nav-links {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+}
+
+.page-numbers {
+	background-color: $color__primary__light;
+	color: white;
+	font-size: 120%;
+	margin-right: 1em;
+	padding: .6em 1em;
+}
+
+.page-numbers:last-child {
+	margin-right: 0;
+}
