@@ -6,7 +6,7 @@
 // ------------
 
 
-@mixin color-scheme($scheme) {
+@mixin scheme($scheme) {
   @if $scheme == dark {
     @media (prefers-color-scheme: dark) { @content; }
   }
