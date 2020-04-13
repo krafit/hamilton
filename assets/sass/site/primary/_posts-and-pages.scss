@@ -99,7 +99,7 @@ header.entry-header {
 	margin: 0 1rem;
 }
 
-@media screen and (min-width: 37.5em) {
+@include responsive(small-screens) {
 	.hentry:first-child {
 		margin-top: 4rem;
 	}
