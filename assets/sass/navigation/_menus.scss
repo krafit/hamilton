@@ -2,7 +2,6 @@
 	clear: both;
 	display: block;
 	width: 100%;
-	// background-color: red; // @todo: remove
 	text-align: right;
 	position: fixed;
 	padding: 1em;
@@ -96,7 +95,7 @@
 	width: 100%;
 }
 
-@media screen and (min-width: 37.5em) {
+@include responsive(small-screens) {
 	.main-navigation {
 		position: initial;
 		text-align: center;
