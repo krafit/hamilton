@@ -9,9 +9,13 @@
 
 .page-numbers {
 	color: white;
-	font-size: 120%;
-	margin-right: 1em;
-	padding: .6em 1em;
+	margin-right: .5em;
+	padding: .6em .8em;
+	@include responsive(small-screens) {
+		font-size: 120%;
+		margin-right: 1em;
+		padding: .6em 1em;
+	}
 }
 
 .page-numbers:last-child {
