@@ -18,19 +18,21 @@ get_header(); ?>
 
 			get_template_part( 'template-parts/content', get_post_format() );
 
-			echo '<div class="wrapper">';
+			echo '<div class="content-meta">';
+				echo '<div class="wrapper">';
 
-				the_post_navigation( [
-					'prev_text' => '<span class="navigation-title">' . __( 'Previous post', 'meitner' ) . '</span> %title',
-					'next_text' => '<span class="navigation-title">' . __( 'Next post', 'meitner' ) . '</span> %title',
-				] );
+					the_post_navigation( [
+						'prev_text' => '<span class="navigation-title">' . __( 'Previous post', 'meitner' ) . '</span> %title',
+						'next_text' => '<span class="navigation-title">' . __( 'Next post', 'meitner' ) . '</span> %title',
+					] );
 
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
+					// If comments are open or we have at least one comment, load up the comment template.
+					if ( comments_open() || get_comments_number() ) :
+						comments_template();
+					endif;
 
-			echo '</div> <!-- .wrapper -->';
+				echo '</div> <!-- .wrapper -->';
+			echo '</div> <!-- .content-meta -->';
 
 		endwhile; // End of the loop.
 		?>

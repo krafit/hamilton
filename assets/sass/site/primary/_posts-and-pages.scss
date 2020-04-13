@@ -65,6 +65,11 @@ header.entry-header {
 	max-width: 100%;
 }
 
+.content-meta {
+	padding: 1rem;
+	width: 100%;
+}
+
 .entry-footer {
 	width: 100%;
 	.single-post &::before {
