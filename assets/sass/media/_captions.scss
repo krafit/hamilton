@@ -29,11 +29,13 @@ figcaption {
 
 @include scheme(dark) {
 	.wp-caption-text,
-	figcaption,
+	figcaption {
+		color: #bac0c5
+	}
 	.wp-caption-text a,
 	.wp-caption-text a:visited,
 	figcaption a,
 	figcaption a:visited {
-		color: #fafafa
+		color: #bac0c5;
 	}
 }
